@@ -43,13 +43,11 @@ def test(agent, env, total_episodes=30, record_video=True):
         terminated, truncated = False, False
         while not terminated and not truncated:
             frames += 1
-            # print("aaa yeahhh")
             action = agent.make_action(state, test=True)
             state, reward, terminated, truncated, _ = env.step(action)
             episode_reward += reward
             #frames.append(state)
             if record_video:
-                # print("Lee video BC")
                 vid.capture_frame()
             if terminated or truncated:
                 ###############################################################################
