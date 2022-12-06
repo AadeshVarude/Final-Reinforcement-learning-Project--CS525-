@@ -1,11 +1,10 @@
-# PPO-Atari-PyTorch
- Implementation of [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) by John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov.<br><br>
- 
-# Pong
-![pong](https://github.com/Hauf3n/PPO-Atari-PyTorch/blob/main/media/Pong.png)
- 
-# Breakout
-![breakout](https://github.com/Hauf3n/PPO-Atari-PyTorch/blob/main/media/Breakout.png)
+The model files are as follows:
 
-# Seaquest
-![seaquest](https://github.com/Hauf3n/PPO-Atari-PyTorch/blob/main/media/Seaquest.png)
+* The trained file for the brekaout game 
+  * ppo_breakout_model.pth
+
+* The trained file for the SpaceInvaders game
+  * ppo_sapceinvaders_model.pth file
+
+For changing the environment just switch the name of the environment for BreakoutNoFrameSkip-v4 to SpaceInvaderNoFrameSkip-v4.
+
