@@ -55,7 +55,7 @@ def play_test(args):
     env = Atari_Games(raw_env, env_name, num_stacked_frames, use_add_done=args.lives)
     
     tr=runner.test_Runner(env, agent, folder_name)
-    obs, actions, rewards, dones, values, old_action_prob = tr.run(1000)
+    obs, actions, rewards, dones, values, old_action_prob = tr.run(100000)
 
 if __name__ == "__main__":
     
